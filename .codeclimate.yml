@@ -1,0 +1,12 @@
+version: "2"
+plugins:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - javascript
+exclude_patterns:
+  - config/**/*.js
+  - dist/**/*.js
+  - src/**/*.spec.js
+  - src/js/vendor/**/*.js

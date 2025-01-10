@@ -1,0 +1,29 @@
+.DS_store
+.*.swp
+
+# Ignore vs code directories
+*.code-workspace
+.vscode/
+
+# ignore Node-specific files and directories
+node_modules/
+npm-debug.log*
+*.gz
+*.tgz
+
+# ignore the generated dist directory
+dist/
+html-templates/
+
+# ignore compiled storybook directory
+storybook-static/
+_site/
+
+# ignore gulp-generated vendor files
+src/stylesheets/lib
+
+# ignore sass cache
+.sass-cache/
+
+# ignore sassdoc build
+sassdoc/
