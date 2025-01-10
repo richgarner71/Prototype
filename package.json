@@ -6,6 +6,7 @@
   "dependencies": {
     "@uswds/uswds": "3.11.0",
     "browserify": "^17.0.1",
+    "codeql": "^1.0.0",
     "element-closest": "^2.0.2",
     "gulp-mocha": "^10.0.1",
     "gulp-sourcemaps": "^2.6.5",
@@ -30,5 +31,4 @@
   },
   "author": "",
   "license": "ISC"
-  
 }

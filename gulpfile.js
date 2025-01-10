@@ -87,8 +87,8 @@ exports.buildSass = series(lintSass, compileSass);
 exports.buildJS = series(typeCheck, compileJS);
 exports.buildUSWDS = build;
 exports.release = release;
-exports.compile = compile;
-exports.init = init;
+exports.compile = uswds.compile;
+exports.init = uswds.init;
 
 /**
  * *Watch task*
