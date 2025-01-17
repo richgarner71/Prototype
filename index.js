@@ -1,2 +1,2 @@
-<include src="banner.html"></include>
+<!-- #include file="banner.html" -->
 This is another test
