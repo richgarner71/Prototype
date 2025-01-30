@@ -1,0 +1,17 @@
+<link href="./assets/css/_usa-banner.css" type="stylesheet">
+
+
+<div id="content"></div>
+
+<p>This is a test to pull in one HTML file and load it into a div on the index page.</p>
+<p>The issue is that I cannot get the sass file to generate a stylesheet (usa-banner).</p>
+
+<p>Note: The intention here is to minimize dependancy on pre-processors and compilers. I want to be able to generate the CSS files and use them wiothout the need to regenerate them again.</p>
+
+<script type="text/javascript">
+    function load_home() {
+        document.getElementById("content").innerHTML='<object type="text/html" data="pages/banner.html" ></object>';
+    }
+
+    load_home();
+</script>

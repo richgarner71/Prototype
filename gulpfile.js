@@ -27,13 +27,12 @@ uswds.paths.src.theme = './node_modules/@uswds/uswds/dist/theme';
 uswds.paths.src.fonts = './node_modules/@uswds/uswds/dist/fonts';
 uswds.paths.src.img = './node_modules/@uswds/uswds/dist/img';
 uswds.paths.src.js = './node_modules/@uswds/uswds/dist/js';
+uswds.paths.src.projectSass = "./sass";
 uswds.paths.dist.js = './assets/uswds/js';
-uswds.paths.dist.css = './assets/uswds/css';
 uswds.paths.dist.img = './assets/uswds/images';
 uswds.paths.dist.fonts = './assets/uswds/fonts';
-uswds.paths.dist.css = './assets/css';
-uswds.paths.dist.theme = './sass/uswds';
-
+uswds.paths.dist.css = './assets/uswds/css';
+uswds.paths.dist.theme = './sass';
 
 //Version
 uswds.settings.version = 3;

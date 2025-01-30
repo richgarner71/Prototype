@@ -1,3 +1,4 @@
-@forward "uswds-theme";
-@forward "uswds";
-@forward "uswds-theme-custom-styles";
+
+@forward "../../sass/uswds/uswds-theme";
+@forward "./node_modules/@uswds/uswds/packages/uswds/_index.scss";
+@forward "../../sass/uswds/uswds-theme-custom-styles";
