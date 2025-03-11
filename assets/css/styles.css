@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url(../../assets/fonts/proximanova_regular.ttf);
+  }
+  
+  html{
+  font-family: "Proxima-Nova" !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a{
+  text-decoration: none;
+  color: #004bbd;
+}
+
+a:visited{
+  color: #004bbd;
+}
+
+/* site colors */
+:root{
+  --fedsim-blue1: #1D5187;
+  --fedsim-blue2: #4B92CE;
+  --fedsim-blue3: #4D7999;
+  --fedsim-blue4: #90CBE4;
+  --fedsim-darkgrey: #3b3b3b;
+  --fedsim-litegrey: #B3B4B4;
+  --fedsim-purple: #570A3B;
+  --fedsim-pink: #AA839D;
+  --fedsim-gold: #a38e4a;
+  --fedsim-offwhite: #f3f3f3;
+  --aas-darkblue: #033b77;
+  --aas-orange: #ca3600;
+  --aas-pale: #d4e2ed;
+  --aas-grey: #a0aab1;
+  --aas-blue: #366699;
+  --aas-liteblue: #b8e5f8;
+  --aas-red: #861111;
+  --aas-green: #316131;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Header Styles */
+.usa-header--extended{
+  background-color: var(--fedsim-blue1);
+}
+
+.usa-navbar{
+  background-color: var(--fedsim-blue1);
+  height: 80px!important;
+  overflow: visible!important;
+}
+
+#extended-logo{
+  margin: 0;
+  padding-top: 6px;
+}
+
+.usa-button{
+  background-color: var(--aas-orange) !important;
+  border-radius: 0 22px 22px 0!important;
+}
+
+.usa-input{
+  border-radius: 22px 0 0 22px!important;
+  border: white;
+}
+
+.usa-nav__link, .usa-nav__primary{
+  font-family: "Proxima-Nova" !important;
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+.usa-nav__link:hover, .usa-nav__link:active, 
+.usa-accordian__button:hover, 
+.usa-accordian__button:active,
+.usa-nav__primary button[aria-expanded=false]:hover,
+.usa-nav__primary button[aria-expanded=false]:active  {
+  background-color: var(--aas-orange);
+}
+
+.usa-header--extended .usa-nav__primary-item > .usa-current::after, 
+.usa-nav__link:after,
+.usa-accordian__button:after{
+  display: none !important;
+}
+
+@media (min-width: 64em) {
+  .usa-nav__primary .usa-accordion__button span {
+      padding-right: 0.6rem !important;
+  }
+}
+
+.usa-nav__primary button[aria-expanded=false] span::after {
+  background-color: white;
+    -webkit-mask-image: url(../assets/img/usa-icons/expand_more.svg);
+    mask-image: url(../assets/img/usa-icons/expand_more.svg);
+}
+
+.usa-banner__inner {
+  display: block;
+  align-items: center;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.usa-menu-btn{
+  padding: 8px;
+  margin: 10px;
+}
+
+.usa-banner__button::after, 
+.usa-banner__button[aria-expanded=true]::after{
+	background-color: #005ea2;
+  position: relative;
+	-webkit-mask: url(../assets/img/usa-icons/expand_more.svg) no-repeat center/contain;
+	mask: url(../assets/img/usa-icons/expand_more.svg) no-repeat center/contain;
+}
+
+.usa-banner__button:hover::after, 
+.usa-banner__button[aria-expanded=true]:hover::after{
+  background-color: #1a4480;
+  position: relative;
+	-webkit-mask: url(../assets/img/usa-icons/expand_more.svg) no-repeat center/contain;
+	mask: url(../assets/img/usa-icons/expand_more.svg) no-repeat center/contain;
+}
+
+.usa-prose{
+  font-family: "Proxima-Nova", sans-serif !important;
+}
+
+.usa-section{
+  padding-top:0 !important;
+}
+
+/* Footer Styles */
+.usa-footer{
+  display: block;
+  margin-inline: auto;
+  min-width: 100vw;
+  line-height: 1.4rem;
+  font-family: "Proxima-Nova", sans-serif !important;
+  font-size: 0.80rem;
+  background-color: var(--aas-blue) !important;
+  position: absolute;
+  bottom: 0px;
+}
+
+.usa-identifier{
+  font-family: "Proxima-Nova", sans-serif !important;
+  background-color: var(--aas-blue) !important;
+}
+
+.usa-identifier__required-link, .usa-identifier__identity-domain{
+  color: white !important;
+}
+
+.logo-links{
+  padding: 10px;
+}
+
+.footer-back{
+  width: 100vw;
+  background-color: var(--fedsim-litegrey);
+  margin-top: 10px;
+}
+
+a.external_link::after{
+  background: 0 0;
+  background-color: white;
+  mask: url(../assets/img/usa-icons/launch.svg) no-repeat center/contain;
+  -webkit-mask: url(../assets/img/usa-icons/launch.svg) no-repeat center/contain;
+}
+
+@media screen and (max-width: 414px){
+  .footer_side_left,
+  .footer_side_right{
+    text-align: center; 
+  }
+}
